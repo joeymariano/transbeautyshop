@@ -12,7 +12,26 @@
 
   <body>
     <div class="container">
+      <div class="row">
+        <div class="col-12 text-center"><h1>TRANS BEAUTY SHOP <%= image_tag('symbol.png', height: '50')%></h1></div>
+        <div class="col-6"><h2>PHILADELPHIA AND NYC</h2></div><div class="col-6"><h2>ELECTROLYSIS AND MAKEUP</h2></div>
+      </div><br>
+
     <%= yield %>
+<!-- © Trans Beauty Shop 2018 - site by <a href="http://joeymariano.com">joey mariano</a> -->
+
+      <div class="row footer">
+        <div class="col-6">
+          <h3>Contact</h3>
+          <p>Tel: +1 (267) 225-7275<br>
+          E-mail: Click here to e-mail us.</p>
+        </div>
+        <div class="col-6">
+          <h3>Address</h3>
+          <p>1315 Walnut St. Suite #717<br>
+          Philadelphia, PA 19107</p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

@@ -14,10 +14,16 @@ h1 {
 body {
 font-family: 'Playfair Display SC', serif;
 color: white;
-background: linear-gradient(black, #ed5473);
+background: linear-gradient(0deg, #666666, black);
+background-attachment: fixed;
 letter-spacing: .25em;
 }
 
 .container {
+  background-color: black;
   height: 100%;
+}
+
+.footer {
+  margin-top: 20px;
 }
