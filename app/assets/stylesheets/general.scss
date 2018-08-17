@@ -4,19 +4,21 @@ html {
 }
 
 h1 {
-  font-size: 5em;
-  font-weight: bold;
+  // font-family: 'Playfair Display SC', serif;
+  font-size: 4em;
+  letter-spacing: .35em;
   img {
     vertical-align: 0;
   }
 }
 
 body {
-font-family: 'Playfair Display SC', serif;
+font-family: 'Lato', sans-serif;
 color: white;
 background: linear-gradient(0deg, #666666, black);
 background-attachment: fixed;
 letter-spacing: .25em;
+font-weight:lighter;
 }
 
 .container {
@@ -26,4 +28,31 @@ letter-spacing: .25em;
 
 .footer {
   margin-top: 20px;
+}
+
+p {
+  font-size: 1.25em;
+}
+
+ul.nav {
+  margin-top: -15px;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
+/* unvisited link */
+a:link {
+    color: white;
+}
+/* visited link */
+a:visited {
+    color: white;
+}
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+/* selected link */
+a:active {
+    color: hotpink;
 }
