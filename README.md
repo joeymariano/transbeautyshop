@@ -1,24 +1,8 @@
-# README
+# Trans Beauty Shop Website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Design by Joey Mariano
+Copyright Isabella Nicole
 
-Things you may want to cover:
+* Created With Rails and Bootstrap
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Using a Postgres Database
