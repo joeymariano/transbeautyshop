@@ -4,32 +4,38 @@
 
 #electrolysis {
   h2 {
+
+    font-size: 2em;
     font-weight: bold;
+    background: -webkit-linear-gradient(#fabbd0, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   h3 {
     font-weight: bold;
+    background: -webkit-linear-gradient(#7edfea, #fff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
   li {
-    font-size: 1em;
+    font-size: 1.25em;
   }
-  p {
-    font-size: 1em;
-  }
+
 }
 
 #transhair {
   h2 {
+    color: #fabbd0;
     font-weight: bold;
   }
   h3 {
+    color: #7edfea;
     font-weight: bold;
   }
   li {
-    font-size: 1em;
+    font-size: 1.25em;
   }
-  p {
-    font-size: 1em;
-  }
+
 }
 
 #about {
@@ -40,4 +46,12 @@
   img {
     border-radius: 50%;
   }
+}
+
+button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background-color: #333333;
+  border: #111111;
+  color: white;
 }
