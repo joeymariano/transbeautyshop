@@ -1,5 +1,4 @@
 class InformationController < ApplicationController
-
   def about
   end
 
@@ -11,5 +10,4 @@ class InformationController < ApplicationController
 
   def contact
   end
-  
 end
