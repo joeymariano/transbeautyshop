@@ -10,7 +10,7 @@ Rails.application.configure do
     :user_name      => ENV['username'],
     :password       => ENV['password'],
     :authentication => :plain,
-  }}
+  }
 
   # Code is not reloaded between requests.
   config.cache_classes = true
