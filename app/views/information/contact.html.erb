@@ -1,6 +1,6 @@
 <div class="row" id="contact">
   <div class='col-12'>
-    <form id="contact-form" method="post" action="contact.php" role="form">
+    <%= form_tag "/email", method: 'post' %>
 
     <div class="messages"></div>
 
@@ -65,7 +65,7 @@
 
     </div>
 
-</form>
+<% end %>
   </div>
   </div>
 
