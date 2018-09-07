@@ -6,4 +6,6 @@ Rails.application.routes.draw do
   get '/contact', to: 'information#contact'
   get '/faqs', to: 'information#faqs'
   get '/services', to: 'information#services'
+
+  post '/email', to: 'email#create'
 end
