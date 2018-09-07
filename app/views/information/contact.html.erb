@@ -2,7 +2,9 @@
   <div class='col-12'>
     <%= form_tag "/email", method: 'post' do %>
 
-    <div class="messages"></div>
+    <% if flash[:notice] %>
+      <div class="notice"><%= flash[:notice] %></div>
+    <% end %>
 
     <div class="controls">
 
@@ -24,7 +26,7 @@
             <div class="col-md-4">
                 <div class="form-group">
                     <label for="form_lastname">Pronouns *</label>
-                    <input id="form_lastname" type="text" name="pronoun" class="form-control" placeholder="Please enter your Pronouns *" required="required" data-error="Pronoun is required.">
+                    <input id="form_lastname" type="text" name="pronoun" class="form-control" placeholder="Please enter your preferred pronoun/s *" required="required" data-error="Pronoun or is required.">
                     <div class="help-block with-errors"></div>
                 </div>
             </div>
@@ -41,9 +43,9 @@
                 <div class="form-group">
                     <label for="form_need">Please specify your need *</label>
                     <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
-                        <option value=""></option>
-                        <option value="Request quotation">Request quotation</option>
+                        <option value="Request order status"></option>
                         <option value="Request order status">Scheduling</option>
+                        <option value="Request quotation">Request quote</option>
                         <option value="Other">Other</option>
                     </select>
                     <div class="help-block with-errors"></div>

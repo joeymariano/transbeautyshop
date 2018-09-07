@@ -1,16 +1,16 @@
 class ClientForm < MailForm::Base
   attribute :name,      :validate => true
-  attribute :surname
+  attribute :surname,      :validate => true
   attribute :pronoun
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :need
-  attribute :message
+  attribute :message,      :validate => true
 
   # Declare the e-mail headers. It accepts anything the mail method
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "My Contact Form",
+      :subject => "Trans Beauty Shop",
       :to => "joey.michalina.mariano@gmail.com",
       :from => %("#{name}" <#{email}>)
     }
