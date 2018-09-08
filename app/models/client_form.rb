@@ -10,8 +10,8 @@ class ClientForm < MailForm::Base
   # in ActionMailer accepts.
   def headers
     {
-      :subject => "Trans Beauty Shop",
-      :to => "joey.michalina.mariano@gmail.com",
+      :subject => "Trans Beauty Shop Contact Form",
+      :to => "isabella@transbeautyshop.com",
       :from => %("#{name}" <#{email}>)
     }
   end
