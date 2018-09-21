@@ -13,7 +13,7 @@ class ClientForm < MailForm::Base
     {
       :subject => "Trans Beauty Shop Contact Form",
       :to => "isabella@transbeautyshop.com",
-      :from => %("#{name + ' ' + email}" <"isabella@transbeautyshop.com">)
+      :from => %("#{name + ' ' + email}" <isabella@transbeautyshop.com>)
     }
   end
 end
