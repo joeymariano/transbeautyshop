@@ -1,7 +1,8 @@
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
-  config.force_ssl = true
   
+  # config.force_ssl = true
+
   config.action_mailer.delivery_method = :smtp
   # SMTP settings for mailgun
 config.action_mailer.smtp_settings = {
