@@ -18,44 +18,36 @@ h1 {
 
 
 h2 {
-  // font-family: 'Playfair Display SC', serif;
-  // font-size: 3.5vw;
   letter-spacing: .5vw;
 }
 
 h3 {
-  // font-family: 'Playfair Display SC', serif;
   letter-spacing: .5vw;
 }
 
 
 body {
-font-family: 'Lato', sans-serif;
-color: white;
-background: linear-gradient(0deg, #666666, black);
-background-attachment: fixed;
-letter-spacing: .25em;
-font-weight:lighter;
-}
-
-.container {
-  background-color: black;
-  height: 100%;
-  max-width: 100%;
+  font-family: 'Lato', sans-serif;
+  color: white;
+  background: linear-gradient(0deg, #666666, black);
+  background-attachment: fixed;
+  letter-spacing: .25em;
+  font-weight:lighter;
 }
 
 .footer {
   margin-top: 40px;
-  padding-left: 15px;
 }
 
 p {
-  font-size: 3vw;
+
+}
+
+.container{
+  background-color: black;
 }
 
 .nav {
-  font-size: 6vw;
-  letter-spacing: 2vw;
   padding-bottom: 30px;
   margin-top: -5px;
   margin-left: -15px;
