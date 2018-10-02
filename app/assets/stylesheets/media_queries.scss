@@ -1,6 +1,16 @@
 // Extra small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
+  h1{
+    font-size: 6vw;
+    #symbol{
+      font-size: 5vw;
+    }
+  }
 
+  h2{
+    font-size: 3vw;
+    letter-spacing: 2vw;
+  }
 }
 
 // Small devices (landscape phones, less than 768px)
