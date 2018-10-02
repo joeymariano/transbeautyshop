@@ -8,10 +8,11 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag 'favicon.ico' %>
-    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+
     <meta name="description" content="Trans Beauty Shop specializes in providing electrolysis for permanent hair removal, makeup lessons, and beauty tips to transgender women in Philadelphia and NYC. Owned and operated by a transgender woman and licensed electrologist and using only the best makeup brands – we are serious about your transition!">
     <link rel="canonical" href="http://transbeautyshop.com"/>
     <meta name="keywords" content="transgender, transgender woman, electrolysis, electrolysis hair removal, electrolysis vs laser, hair removal electrolysis, makeup, make up, how to apply makeup, transitioning">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70098445-3"></script>
     <script>
@@ -21,20 +22,20 @@
 
       gtag('config', 'UA-70098445-3');
     </script>
+
   </head>
 
   <body>
     <div class="container">
 
       <div class="row">
-        <div class="col-l-12 col-xl-12 text-center"><h1><a href="/">TRANS BEAUTY SHOP <span id='symbol'>⚧</span></a></h1></div>
-        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 col-xl-6 text-center"><h2>PHILADELPHIA AND NYC</h2></div><div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 col-xl-6 text-center"><h2>ELECTROLYSIS AND MAKEUP</h2></div>
+        <div class="col-l-12 col-xl-12 display-1 text-left-xs text-left-sm"><a href="/">TRANS BEAUTY SHOP</a></div>
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 col-xl-6 text-left-xs text-left-sm flex"><h3>PHILADELPHIA AND NYC</h3></div>
+        <div class="col-xs-12 col-sm-12  col-md-6 col-lg-6 col-xl-6 text-left-xs text-left-sm"><h5>ELECTROLYSIS MAKEUP WAXING</h5></div>
       </div><br>
 
-      <!-- <nav class="navbar navbar-expand-sm navbar-justify">
-
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+      <nav class="nav nav-pills nav-fill flex-xl-row flex-lg-row flex-md-row flex-sm-column  flex-column">
+        <a class="flex-sm-fill nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
         Services
         </a>
         <div class="dropdown-menu" aria-labelledby="Preview">
@@ -43,46 +44,29 @@
         <a class="dropdown-item" href="/services#waxing-service">Waxing</a>
         </div>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/contact">Contact</a>
-        </li>
+        <a class="flex-sm-fill nav-link" href="/contact">Contact</a>
 
-        <li class="nav-item">
-          <a class="nav-link" href="/about">About</a>
-        </li>
+        <a class="flex-sm-fill nav-link" href="/about">About</a>
 
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <a class="flex-sm-fill nav-link dropdown-toggle" data-toggle="dropdown" id="Preview" href="#" role="button" aria-haspopup="true" aria-expanded="false">
         FAQs
         </a>
         <div class="dropdown-menu" aria-labelledby="Preview">
         <a class="dropdown-item" href="/faqs#electrolysis">Electrolysis Facts</a>
         <a class="dropdown-item" href="/faqs#transhair">Trans Women Hair Removal FAQs</a>
         </div>
-        </li>
-
-      </nav> -->
-
-      <!--
-      10 - Navbar justified centered links full width
-      -->
-      <nav class="nav nav-pills flex-xl-row flex-lg-row flex-sm-column flex-md-column flex-column">
-        <a class="flex-sm-fill text-sm-center nav-link active" href="#">Active</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
-        <a class="flex-sm-fill text-sm-center nav-link" href="#">Link</a>
-        <a class="flex-sm-fill text-sm-center nav-link disabled" href="#">Disabled</a>
       </nav>
 
     <%= yield %>
 
       <div class="row footer">
-        <div class="col-6">
-          <h3>Contact</h3>
+        <div class="col-12-xs col-12-sm col-6-md col-6-lg col-6-xl">
+          <h2>Contact</h2>
           <p>Tel: <a href="tel:1-267-225-7275"><span style="color: #7edfea">+1 (267) 225-7275</span></a><br>
           <a href="/contact"><span style="color: #7edfea">Contact Form</span></a> to e-mail us.</p>
         </div>
-        <div class="col-6">
-          <h3>Address</h3>
+        <div class="col-12-xs col-12-sm col-6-md col-6-lg col-6-xl">
+          <h2>Address</h2>
           <p>1315 Walnut St. Suite #717<br>
           Philadelphia, PA 19107</p>
         </div>

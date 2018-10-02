@@ -1,52 +1,19 @@
 // Extra small devices (portrait phones, less than 576px)
-@media (max-width: 575.98px) {
-  h1{
-    font-size: 6vw;
-    #symbol{
-      font-size: 5vw;
-    }
-  }
+// No media query for `xs` since this is the default in Bootstrap
 
-  h2{
-    font-size: 3vw;
-    letter-spacing: 2vw;
-  }
-}
 
-// Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {  }
 
-}
-
-// Medium devices (tablets, less than 992px)
-@media (max-width: 991.98px) {
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
   .container {
   max-width: 100%;
   }
 }
 
-// Large devices (desktops, less than 1200px)
-// screen and (min-width: 991.99px) and
-@media (max-width: 1199.98px) {
-  // h1{
-  //   font-size: 4.5vw;
-  //   img{
-  //     height: 40px;
-  //   }
-  // }
-  //
-  // h2{
-  //   font-size: 1.7vh;
-  // }
-  //
-  // h3{
-  //   font-size: 1.6vh;
-  // }
-  //
-  // p{
-  //   font-size: 1.25vh;
-  // }
-}
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {  }
 
-// Extra large devices (large desktops)
-// No media query since the extra-large breakpoint has no upper bound on its width
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {  }
