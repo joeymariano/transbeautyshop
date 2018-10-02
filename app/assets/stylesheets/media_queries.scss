@@ -5,21 +5,40 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
 
-  .container{
-    margin-left: 0 auto;
-    margin-right: 0 auto;
-  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .container-fluid{
+    width: 740px;
+    margin: 0 auto;
+  }
 
+  .nav{
+    margin-left: 1em;
+  }
 }
 
 // Large devices (desktops, 992px and up)
-@media (min-width: 992px) {  }
+@media (min-width: 992px) {
+  .container-fluid{
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  .nav{
+    margin-left: 1.4em;
+  }
+ }
 
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
+  .container-fluid{
+    width: 1150px;
+    margin: 0 auto;
+  }
 
+  .nav{
+    margin-left: 5em;
+  }
 }
