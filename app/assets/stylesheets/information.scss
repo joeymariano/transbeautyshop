@@ -4,9 +4,6 @@
 
 #electrolysis {
   h2 {
-
-    font-size: 2em;
-    font-weight: bold;
     background: -webkit-linear-gradient(#fabbd0, #fff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -18,7 +15,7 @@
     -webkit-text-fill-color: transparent;
   }
   li {
-    font-size: 1.25em;
+
   }
 
 }
@@ -32,17 +29,10 @@
     color: #7edfea;
     font-weight: bold;
   }
-  li {
-    font-size: 1.25em;
-  }
 
 }
 
 #about {
-  p {
-    font-size: 2em;
-  }
-
   img {
     border-radius: 50%;
   }
