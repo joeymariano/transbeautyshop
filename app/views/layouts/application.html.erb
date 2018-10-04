@@ -26,13 +26,15 @@
   </head>
 
   <body>
+
     <div class="container-fluid">
 
+      <header>
       <div class="row">
         <div class="display-1 col-sm-12 col-md-12 col-l-12 col-xl-12
         text-left"><a href="/">TRANS BEAUTY SHOP</a></div>
         <div class="col-sm-12  col-md-12 col-lg-12 col-xl-12 text-left"><h1>PHILADELPHIA AND NYC</h1><h2>ELECTROLYSIS MAKEUP WAXING</h2></div>
-      </div><br>
+      </div>
 
       <nav class="nav nav-fill flex-xl-row flex-lg-row flex-md-column flex-sm-column  flex-colum">
         <div class="dropdown">
@@ -60,23 +62,36 @@
         </div>
         </div>
       </nav>
+    </header>
 
     <%= yield %>
 
-      <div class="row footer">
+    <footer>
+      <div class="row">
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
           <h1>Contact</h1>
-          <p>Tel: <a href="tel:1-267-225-7275"><span style="color: #7edfea">+1 (267) 225-7275</span></a><br>
-          <a href="/contact"><span style="color: #7edfea">Contact Form</span></a> to e-mail us.</p>
+          <h4>Tel: <a href="tel:1-267-225-7275"><span style="color: #7edfea">+1 (267) 225-7275</span></a><br>
+          <a href="/contact"><span style="color: #7edfea">Contact Form</span></a> to e-mail us.</h4>
         </div>
         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
           <h1>Address</h1>
-          <p>1315 Walnut St. Suite #717<br>
-          Philadelphia, PA 19107</p>
+          <h4>1315 Walnut St. Suite #717<br>
+          Philadelphia, PA 19107</h4>
         </div>
       </div>
+    </footer>
 
     </div> <!-- container -->
 
   </body>
 </html>
+
+<script>
+$(document).ready(function(){
+  if (window.innerHeight > $('.container-fluid').height()){
+    let origHeight = $('.container-fluid').height()
+    let difference = window.innerHeight - $('.container-fluid').height()
+    $('.container-fluid').height(origHeight + difference)
+  }
+})
+</script>
