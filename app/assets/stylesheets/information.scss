@@ -2,20 +2,18 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.btn-outline-secondary{
+  color: white;
+}
+
 #electrolysis {
   h2 {
-    background: -webkit-linear-gradient(#fabbd0, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    color: #fabbd0;
+    font-weight: bold;
   }
   h3 {
+    color: #7edfea;
     font-weight: bold;
-    background: -webkit-linear-gradient(#7edfea, #fff);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-  li {
-
   }
 
 }

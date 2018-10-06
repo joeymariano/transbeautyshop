@@ -29,7 +29,7 @@
   }
 
   .dropdown-item{
-    font-size: 2em;
+    font-size: 1em;
   }
 
   .form-group{
@@ -69,18 +69,50 @@
 
   .nav{
     /* top | right | bottom | left */
-    margin: 2.2em 0 2.2em 1.4em;
+    margin: .75em 0 2.2em 1.4em;
+        text-align: center;
   }
 
   .nav-link{
     /* top | right | bottom | left */
-    margin: 0 2em 0 0;
+    margin: 0 1.5em 0 0;
     padding: 0 0 0 0;
     font-size: 2em;
   }
 
   .form-group{
     font-size: 1.5em;
+  }
+
+  #electrolysis {
+    h2{
+      font-size: 1.9em;
+    }
+    h3{
+      font-size: 1.8em;
+    }
+    p{
+      font-size: 1.5em;
+    }
+  }
+
+  #transhair{
+    h2{
+      font-size: 1.9em;
+    }
+    h3{
+      font-size: 1.8em;
+    }
+    p{
+      font-size: 1.5em;
+    }
+  }
+
+
+  #about {
+    p{
+      font-size: 1.5em;
+    }
   }
  }
 
@@ -94,4 +126,42 @@
   .display-1{
     font-size: 6.5em
   }
+
+  .nav{
+        /* top | right | bottom | left */
+    margin: .75em 0 2.2em 0;
+    text-align: center;
+  }
+
+  #electrolysis {
+    h2{
+      font-size: 2.2em;
+    }
+    h3{
+      font-size: 2em;
+    }
+    p{
+      font-size: 1.25em;
+    }
+  }
+
+  #transhair {
+    h2{
+      font-size: 2.2em;
+    }
+    h3{
+      font-size: 2em;
+    }
+    p{
+      font-size: 1.25em;
+    }
+  }
+
+
+  #about {
+    p{
+      font-size: 1.25em;
+    }
+  }
+
 }
