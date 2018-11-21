@@ -11,7 +11,7 @@ class ClientForm < MailForm::Base
   def headers
     {
       :subject => "Trans Beauty Shop Contact Form",
-      :to => "isabella@transbeautyshop.com",
+      :to => "transbeautyshop@gmail.com",
       :from => %("#{name}" <#{email}>)
     }
   end
