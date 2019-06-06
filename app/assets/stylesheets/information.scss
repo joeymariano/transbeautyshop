@@ -39,7 +39,11 @@
 button {
   margin-top: 10px;
   margin-bottom: 10px;
-  background-color: #333333;
+  background-color: white;
   border: #111111;
-  color: white;
+  color: white !important;
+}
+
+.btn-outline-secondary{
+  color: #333333 !important;
 }

@@ -1,3 +1,65 @@
 <div class="row">
-  <%= image_tag('flowers-symbol.jpg', width: '100%', height: '100%', alt: "Being Transgender has many permanant hair removal needs. Try electrolysis for hair removal for transgender women today", title: 'Best Facial Hair Removal')%>
+
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+    </ol>
+    <div class="carousel-inner">
+      <!-- The slideshow -->
+      <div class="carousel-item active">
+        <%= image_tag('1-woman-shaving.jpg', class: 'd-block w-100 img-fluid', alt: "Being Transgender has many permanant hair removal needs. Try electrolysis for hair removal for transgender women today", title: 'Best Facial Hair Removal')%>
+        <div class="carousel-caption d-none d-md-block">
+          <p style="background-color:white;padding:5px;border-radius:10px;">Trans Beauty Shop offers electrolysis specifically designed for Transgender People.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag('2-razor.jpg', class: 'd-block w-100 img-fluid', alt: "Being Transgender has many permanant hair removal needs. Try electrolysis for hair removal for transgender women today", title: 'Best Facial Hair Removal')%>
+        <div class="carousel-caption d-none d-md-block">
+          <p style="background-color:white;padding:5px;border-radius:10px;">Stop shaving and start electrolysis!</p>
+        </div>
+      </div>
+        <div class="carousel-item">
+          <%= image_tag('3-100trans.jpg', class: 'd-block w-100 img-fluid', alt: "Being Transgender has many permanant hair removal needs. Try electrolysis for hair removal for transgender women today", title: 'Best Facial Hair Removal')%>
+        </div>
+      <div class="carousel-item">
+        <%= image_tag('4-image-consult.jpg', class: 'd-block w-100 img-fluid', alt: "Being Transgender has many permanant hair removal needs. Try electrolysis for hair removal for transgender women today", title: 'Best Facial Hair Removal')%>
+        <div class="carousel-caption d-none d-md-block">
+          <p style="background-color:white;padding:5px;border-radius:10px;">Trans Beauty Shop offers image consultation services.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag('5-makeup-tutorials.jpg', class: 'd-block w-100 img-fluid', alt: "Being Transgender has many permanant hair removal needs. Try electrolysis for hair removal for transgender women today", title: 'Best Facial Hair Removal')%>
+        <div class="carousel-caption d-none d-md-block">
+          <p style="background-color:white;padding:5px;border-radius:10px;">Makeup tutorials are designed for trans people by trans people.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag('6-shopping.jpg', class: 'd-block w-100 img-fluid', alt: "Being Transgender has many permanant hair removal needs. Try electrolysis for hair removal for transgender women today", title: 'Best Facial Hair Removal')%>
+        <div class="carousel-caption d-none d-md-block">
+          <p style="background-color:white;padding:5px;border-radius:10px;">Make your wardrobe consultation today.</p>
+        </div>
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+
 </div>
+
+<script>
+  $('.carousel').carousel({
+    interval: 3000
+  })
+</script>
