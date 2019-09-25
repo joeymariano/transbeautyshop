@@ -8,4 +8,6 @@ Rails.application.routes.draw do
   get '/services', to: 'information#services'
 
   post '/email', to: 'email#create'
+
+ 	resources :users, only: [:show, :create, :edit, :delete]
 end
