@@ -8,9 +8,9 @@ class PostsController < ApplicationController
 	def create
 	end
 
-	def edit
+	def update
 	end
 
-	def delete
+	def destroy
 	end
 end

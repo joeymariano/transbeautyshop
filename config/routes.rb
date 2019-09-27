@@ -9,7 +9,7 @@ Rails.application.routes.draw do
 
   post '/email', to: 'email#create'
 
- 	resources :users, only: [:show, :create, :edit, :delete] do
- 		resources :posts, only: [:index, :create, :edit, :delete]
+ 	resources :users, only: [:show, :create, :update, :destroy] do
+ 		resources :posts, only: [:index, :create, :update, :destroy]
  	end
 end
