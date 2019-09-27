@@ -7,6 +7,8 @@ class UsersController < ActionController::Base
 
 	def show
 		@user = User.find(params[:id])
+		@posts = @user.posts
+		@post = Post.new
 	end
 
 	def destroy

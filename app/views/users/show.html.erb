@@ -1,1 +1,11 @@
-<h2>Welcome <%= @user.first_name %></h2>
+<h2>Welcome <%= @user.first_name %> </h2>
+
+<h3>create a new post</h3>
+
+<%= form_for ([@user, @post]) do |f| %>
+		<%= f.label :title%>
+	    <%= f.text_field :title %>
+	   	<%= f.label :body%>
+	    <%= f.text_field :body %>
+		<%= f.submit "Submit" %>
+<% end %>
