@@ -38,11 +38,8 @@ gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'bootstrap', '~> 4.1.3'
 gem 'jquery-rails'
-
 gem 'dotenv-rails'
-
 gem 'mail_form'
-
 gem 'bcrypt', '~> 3.1.7'
 
 group :development, :test do
