@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Trans Beauty Shop - Get Serious About Transition!</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= favicon_link_tag 'favicon.ico' %>
+
+    <link rel="canonical" href="http://transbeautyshop.com"/>
+    <meta name="keywords" content="transgender, transgender woman, electrolysis, electrolysis hair removal, electrolysis vs laser, hair removal electrolysis, electrolysis cost, electrolysis for GRS, electrolysis for hair removal, GRS">
+    <meta name="description" content="Trans Beauty Shop specializes in providing electrolysis for permanent hair removal to transgender women in Philadelphia and NYC. Permanently remove hair from your face, limbs, or bikini area. Owned and operated by a transgender woman and licensed electrologist – we are serious about your transition!">
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-70098445-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-70098445-3');
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="container-fluid">
+
+     
+
+    <%= yield %>
+
+
+    </div> <!-- container -->
+
+  </body>
+</html>

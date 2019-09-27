@@ -1,11 +1,25 @@
-<h2>Welcome <%= @user.first_name %> </h2>
+<div class="row" id="user_interface">
+	<div class="col-12">
+		<h2>Welcome <%= @user.first_name %> create a new post</h2>
 
-<h3>create a new post</h3>
+		<%= form_for [@user, @post], html: {id: "new_post"} do |f| %>
+				<%= f.label :title%><br>
+			    <%= f.text_field :title %><br>
+			   	<%= f.label :body%><br>
+			    <%= f.text_field :body, id: 'new_post_body' %><br><br>
+				<%= f.submit "Submit", class: 'btn btn-outline-secondary collapsed' %>
+		<% end %>
+	</div>
+</div>
 
-<%= form_for ([@user, @post]) do |f| %>
-		<%= f.label :title%>
-	    <%= f.text_field :title %>
-	   	<%= f.label :body%>
-	    <%= f.text_field :body %>
-		<%= f.submit "Submit" %>
-<% end %>
+<div class="row" id="user_posts">
+	<div class="col-12">	
+		<ul> 
+			<% @posts.order('created_at DESC').take(5).each do |p| %>
+			<li><h3><%= p.title %></h3>
+				<p><%= p.body %></p>
+			</li> 
+			<% end %>
+		</ul>
+	</div>
+</div>
