@@ -41,6 +41,8 @@ gem 'jquery-rails'
 gem 'dotenv-rails'
 gem 'mail_form'
 gem 'bcrypt', '~> 3.1.7'
+# gem 'aws-sdk-rails', '~> 2'
+# gem 'aws-sdk-s3', '~> 1'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
