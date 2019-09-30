@@ -1,5 +1,4 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.5.1'
 
@@ -41,8 +40,10 @@ gem 'jquery-rails'
 gem 'dotenv-rails'
 gem 'mail_form'
 gem 'bcrypt', '~> 3.1.7'
-# gem 'aws-sdk-rails', '~> 2'
-# gem 'aws-sdk-s3', '~> 1'
+
+
+gem 'carrierwave'
+gem 'fog-aws'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
