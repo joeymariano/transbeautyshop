@@ -20,10 +20,16 @@
 		<h3 style="margin-bottom: -10px; margin-top: 30px;">Most Recent Posts:</h3>
 		<ul id="user_posts" reversed> 
 			<% @posts.order('created_at DESC').take(5).each do |p| %>
-			<li><h3 style="display: inline;"><%= p.title %></h3> <%= link_to 'EDIT', edit_user_post_path(@user, p) %>
-				<p><%= p.body %></p>
-				<%= image_tag root_url + p.file_url %>
-			</li> 
+				<li>
+					<h3 style="display: inline;"><%= p.title %></h3> 
+					<%= link_to 'EDIT', edit_user_post_path(@user, p) %>
+					<p><%= p.body %></p>
+					<% if Rails.env = 'development' %>
+						<%= image_tag root_url + p.file_url %>
+					<% else %>
+						<%= image_tag p.remote_file_url %>
+					<% end %>
+				</li> 
 			<% end %>
 		</ul>
 	</div>
