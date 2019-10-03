@@ -2,6 +2,7 @@ class PostsController < ApplicationController
 	layout "user_layout"
 
 	def create
+		binding.pry
 		post = Post.new(post_params)
 		user = User.find(params['user_id'])
 		user.posts << post
@@ -25,6 +26,6 @@ class PostsController < ApplicationController
 	private
 
 	def post_params
-		params.require(:post).permit(:title, :body, :user_id)
+		params.require(:post).permit(:file, :title, :body, :user_id)
 	end
 end
