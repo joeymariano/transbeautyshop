@@ -1,0 +1,13 @@
+<div class='row'>
+	<div class='col-12'>
+		<br></br>
+		<%= form_tag create_session_path do %>
+			Email:
+			<%= text_field_tag :email %><br></br>
+			Password:
+			<%= text_field_tag :password %><br></br>
+			<%= submit_tag 'Submit' %>
+		<% end %>
+		<p><%= flash[:notice] %></p>
+	</div>
+</div>

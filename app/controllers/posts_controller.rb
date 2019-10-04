@@ -2,7 +2,6 @@ class PostsController < ApplicationController
 	layout "user_layout"
 
 	def create
-		binding.pry
 		post = Post.new(post_params)
 		user = User.find(params['user_id'])
 		user.posts << post
@@ -10,8 +9,12 @@ class PostsController < ApplicationController
 	end
 
 	def edit
-		@post = Post.find(params['id'])
-		@user = User.find(params['user_id'])
+		if is_logged_in?
+			@post = Post.find(params['id'])
+			@user = User.find(params['user_id'])
+		else
+			redirect_to '/'
+		end
 	end
 
 	def update
@@ -21,6 +24,15 @@ class PostsController < ApplicationController
 			flash[:notice] = 'success!'
 		end
 		redirect_to edit_user_post_path(@user, @post)
+	end
+
+	def is_logged_in?
+		user = User.find(params[:user_id])
+		if user.id == session['user_id']
+			return true
+		else
+			return false
+		end
 	end
 
 	private

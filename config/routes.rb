@@ -9,6 +9,11 @@ Rails.application.routes.draw do
 
   post '/email', to: 'email#create'
 
+  post '/create-session', to: 'sessions#create'
+  get '/login', to: 'sessions#login'
+  get '/logout', to: 'sessions#logout'
+
+
  	resources :users, only: [:show] do
  		resources :posts, only: [:create, :edit, :update]
  	end

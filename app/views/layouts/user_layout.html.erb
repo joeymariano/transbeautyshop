@@ -39,3 +39,14 @@
 
   </body>
 </html>
+
+<script>
+$(document).ready(function(){
+  if (window.innerHeight > $('.container-fluid').height()){
+    let origHeight = $('.container-fluid').height()
+    let difference = window.innerHeight - $('.container-fluid').height()
+    $('.container-fluid').height(origHeight + difference)
+  }
+})
+</script>
+
