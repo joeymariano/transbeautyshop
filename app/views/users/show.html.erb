@@ -26,9 +26,9 @@
 					<%= link_to 'EDIT', edit_user_post_path(@user, p) %>
 					<p><%= p.body %></p>
 					<% if Rails.env == 'development' %>
-						<%= image_tag root_url + p.file_url %>
+						<%= image_tag root_url + p.file_url, class: 'img-fluid' %>
 					<% else %>
-						<%= image_tag p.file_url %>
+						<%= image_tag p.file_url, class: 'img-fluid' %>
 					<% end %>
 				</li> 
 			<% end %>
