@@ -27,7 +27,8 @@
 					<p><%= p.body %></p>
 					<% if Rails.env = 'development' %>
 						<%= image_tag root_url + p.file_url %>
-					<% else %>
+					<% end %>
+					<%= if Rails.env = 'production' %>
 						<%= image_path p.file_url %>
 					<% end %>
 				</li> 
