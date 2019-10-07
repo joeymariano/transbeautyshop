@@ -4,9 +4,9 @@
 		<h2><%= @post %></h2>
 		<br>
 		<%= form_for [@user, @post], html: {id: "edit_post"} do |f| %>
-				<%= f.label :title%><br>
+				<%= f.label :title %><br>
 			    <%= f.text_field :title, id: 'edit_post_title' %><br></br>
-			   	<%= f.label :body%><br>
+			   	<%= f.label :body %><br>
 			    <%= f.text_area :body, id: 'edit_post_body' %><br><br>
 				<%= f.submit 'Save', class: 'btn btn-outline-secondary collapsed', style: 'display: inline;' %>
 					<% if flash[:notice] %>
