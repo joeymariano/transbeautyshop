@@ -25,10 +25,9 @@
 					<h3 style="display: inline;"><%= p.title %></h3> 
 					<%= link_to 'EDIT', edit_user_post_path(@user, p) %>
 					<p><%= p.body %></p>
-					<% if Rails.env = 'development' %>
+					<% if Rails.env == 'development' %>
 						<%= image_tag root_url + p.file_url %>
-					<% end %>
-					<% if Rails.env = 'production' %>
+					<% else %>
 						<%= image_path p.file_url %>
 					<% end %>
 				</li> 
