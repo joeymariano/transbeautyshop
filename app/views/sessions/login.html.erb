@@ -1,13 +1,18 @@
 <div class='row'>
-	<div class='col-12'>
+	<div class='col-6'>
 		<br></br>
 		<%= form_tag create_session_path do %>
-			Email:
-			<%= text_field_tag :email %><br></br>
-			Password:
-			<%= password_field_tag :password %><br></br>
-			<%= submit_tag 'Submit' %>
+			<div class="form-group">
+				<label for="email">Email:  </label> <%= text_field_tag :email, nil, class: 'form-control' %>
+			</div><br></br>
+
+			<div class="form-group">
+				<label for="password">Password:  </label> <%= password_field_tag :password, nil, class: 'form-control' %>
+			</div><br></br>
+
+			<%= submit_tag 'Submit', class: 'btn btn-primary' %>
 		<% end %>
+		
 		<p><%= flash[:notice] %></p>
 	</div>
 </div>
