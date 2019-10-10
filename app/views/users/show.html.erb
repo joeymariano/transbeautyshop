@@ -24,6 +24,7 @@
 				<li class="user_posts_li">
 					<h3 style="display: inline;"><%= p.title %></h3> 
 					<%= link_to 'EDIT', edit_user_post_path(@user, p) %>
+					<%= link_to 'DELETE', user_post_path(@user, p), :method => :delete %>
 					<p><%= p.body %></p>
 					<% if Rails.env == 'development' %>
 						<%= image_tag root_url + p.file_url, class: 'img-fluid' %>
